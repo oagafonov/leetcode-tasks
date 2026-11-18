@@ -6,6 +6,7 @@
 
 - [Computer Science](computer-science/) — алгоритмы, структуры данных и задачи на Java. [План обучения](computer-science/CS-STUDY-PLAN.md)
 - [JDK Internals](jdk-internals/README.md) — глубокое изучение OpenJDK 25, HotSpot и стандартной библиотеки.
+- [Designing Data-Intensive Applications](data-intensive-applications/README.md) — теория и практика проектирования высоконагруженных распределённых систем.
 
 ## Сборка и тесты
 

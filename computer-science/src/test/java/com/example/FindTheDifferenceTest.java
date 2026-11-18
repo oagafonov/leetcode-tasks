@@ -42,7 +42,7 @@ s and t consist of lowercase English letters.
       ", y, y"
   })
   public void findTheDifferenceTest(String word1, String word2, String result){
-    assertEquals(result.charAt(0), findTheDifference(word1 == null ? "": word1, word2));
+    assertEquals(result.charAt(0), findTheDifferenceFast(word1 == null ? "": word1, word2));
   }
 
   public Character findTheDifference(String word1, String word2) {
@@ -68,5 +68,15 @@ s and t consist of lowercase English letters.
       }
     }
    return null;
+  }
+
+  public char findTheDifferenceFast(String word1, String word2) {
+    int xor = word2.charAt(word1.length());
+
+    for (int i = 0; i < word1.length(); i++) {
+      xor ^= word1.charAt(i) ^ word2.charAt(i);
+    }
+
+    return (char) xor;
   }
 }
